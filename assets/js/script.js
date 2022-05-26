@@ -22,7 +22,7 @@ var highscore = 0;
 var secondsLeft;
 var timerInterval;
 
-// MCQ array object
+// MCQ array object created
 const MCQ = [{
     qNumber: 0,
     q: "JavaScript is the programming language of the _____.",
@@ -109,6 +109,7 @@ const MCQ = [{
   }
 ]
 
+//Function init() to start the quiz
 function init(qNumber) {
   questionEl.innerText = MCQ[qNumber].q;
   button0.innerText = MCQ[qNumber].a[0].text;
@@ -242,11 +243,12 @@ function init(qNumber) {
   })
 }
 
+//This calls the init function
 if (startQuiz = true) {
   init("0");
 }
 
-
+//Next question function
 function nextQuestion() {
   startQuiz = false;
   if (qNumber < 3) {
@@ -255,13 +257,14 @@ function nextQuestion() {
   }
 }
 
-// Updates count when answer is correct
+// Function updates score count when answer is correct
 function setCounter() {
   currentCount++;
   countEl.textContent = currentCount;
   getHighScore();
 }
 
+//Function to start the timer to countdown from 15 seconds
 function startTimer() {
   // Sets interval in variable
   timerInterval = setInterval(function() {
@@ -279,6 +282,7 @@ function startTimer() {
   }, 1000);
 }
 
+//Function to get the highscore
 function getHighScore() {
   storedScore = localStorage.getItem(highscore);
   if (storedScore < currentCount) {
@@ -286,17 +290,20 @@ function getHighScore() {
   }
 }
 
+//Function to get student initials from the submit form
 function myInitial(form) {
   var initial = form.inputbox.value;
   getHighScore();
   alert("High Score for " + initial + ":  " + storedScore);
 }
 
+//Creates a button to clear high scores and renders to HTML page
 var buttonClear = document.createElement("button");
 buttonClear.innerHTML = "Clear Highscores";
 var chs = document.querySelector(".clear");
 chs.appendChild(buttonClear);
 
+//Function to clear the high scores
 buttonClear.addEventListener("click", function() {
   storedScore = localStorage.getItem(highscore);
   localStorage.removeItem(highscore);
