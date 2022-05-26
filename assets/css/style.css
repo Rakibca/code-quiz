@@ -1,0 +1,81 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+  {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f9fbfd;
+}
+
+header {
+  padding: 5px;
+  text-align: center;
+  background: #13293d;
+  color: #fff;
+}
+
+h1 {
+  text-align: left;
+  font-variant: small-caps;
+}
+
+.instructions {
+  color: red;
+  text-align: left;
+  font-size: 18px;
+  font-variant: small-caps;
+}
+
+#question {
+  font-size: 22px;
+  font-variant: small-caps;
+}
+
+.btn-group-options button {
+  display: flex;
+  background-color: #2596be;
+  color: white;
+  padding: 20px 24px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  width: 50%;
+  display: block;
+}
+
+/* Add a background color on hover */
+.btn-group-options button:hover {
+  background-color: green;
+}
+
+#buttonStart {
+  background-color: yellow;
+  padding: 30px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  width: 30%;
+  display: block;
+  font-size: 25px;
+}
+
+.clear {
+  margin: none;
+  line-height: 40px;
+  font-weight: bold;
+  padding: auto;
+  border: none;
+  display: inline;
+}
+
+.clear button:hover {
+  background: lightsalmon;
+}

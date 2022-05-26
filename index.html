@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Code Quiz Challenge</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Code Quiz Challenge</h1>
+  </header>
+  <div>
+    <h3 class="time" style="text-align:center;"></h3>
+    <h5 class="instructions">Try to answer the following code-related questions within the time
+      limit of 15 seconds. Keep in mind that incorrect answers will penalize your time
+      by 2 seconds! This Challenge has 3 questions.<h5>
+
+        <div>
+          <button id="buttonStart"><strong>START QUIZ</strong></button>
+        </div>
+
+        <div id="question"></div>
+
+        <div class="btn-group-options">
+          <button id="button0" onclick=""></button>
+          <button id="button1"></button>
+          <button id="button2"></button>
+          <button id="button3"></button>
+        </div>
+
+        <h4><span class="comment"></span></h4>
+        <h4>Current Score: <span class="count"></span></h4>
+        <h2><span id="allDone"></span></h2>
+        <h3>Your all time Highest Score is: <span class="highcount"></span></h3>
+
+        <div class="clear"></div>
+
+        <form name=" myform" action="" method="get">
+          Enter Initials: <input type="text" name="inputbox" value="">
+          <input type="button" name="buttonSubmit" value="submit" onclick="myInitial(this.form)">
+        </form>
+  </div>
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
