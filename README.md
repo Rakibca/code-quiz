@@ -17,16 +17,12 @@ This website uses these technologies to work properly:
 - [JS] - Advanced Javascript Language.
 
 This website was coded using the the Acceptance Criteria mentioned below:
-WHEN I click the start button
-THEN a timer starts and I am presented with a question
-WHEN I answer a question
-THEN I am presented with another question
-WHEN I answer a question incorrectly
-THEN time is subtracted from the clock
-WHEN all questions are answered or the timer reaches 0
-THEN the game is over
-WHEN the game is over
-THEN I can save my initials and score
+- When I click the start button, then a 15 second countdown timer starts and I am presented with a question.
+- When I answer a question, then I am presented with the next question.
+- When I answer a question incorrectly, then 2 seconds is subtracted from the countdown clock.
+- When all the questions are answered or the timer reaches 0, then the code quiz is over.
+- When the code quiz is over, then I can save my initials and score.
+- This website keeps track of the high scores and clears them on request by the student.
 
 ### **Deployed website link:**
 https://rakibca.github.io/code-quiz/
